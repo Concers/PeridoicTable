@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Deka Tesis/StudioProjects/PeridoicTable/app/src/main/res/layout/activity_main.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Deka Tesis/StudioProjects/PeridoicTable/app/src/main/res/layout/adapter_peridoic_item_list.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Deka Tesis/StudioProjects/PeridoicTable/app/src/main/res/layout/gridlayout.xml" value="0.4129763130792997" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
