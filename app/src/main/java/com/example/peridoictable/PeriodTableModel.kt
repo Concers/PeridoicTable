@@ -1,14 +1,12 @@
 package com.example.peridoictable
 
 data class PeriodTableModel(
-    val id: Byte,
-    val name: String,
+    val id: String,
+    val name: String = "",
+    val color : String ="",
     // Atomic Weight
-    val atomic_mass: Double,
+    val atomic_mass: String,
     val symbol: String,
-    val xpos: Byte,
-    val ypos: Byte,
-    val electron_configuration: String,
     val isBlank: Boolean = false
 
 )
