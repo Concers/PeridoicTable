@@ -1,163 +1,36 @@
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tool="http://schemas.android.com/tools">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
 
+        <import type="android.view.View" />
+
+        <variable
+            name="element"
+            type="com.example.peridoictable.PeriodTableModel" />
     </data>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <FrameLayout
+        backgroundColor="@{element.category}"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="0.5dp"
+        android:orientation="vertical"
+        android:visibility="@{element.visible ? View.VISIBLE : View.INVISIBLE}">
 
-        <GridLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:columnCount="18"
-            android:rowCount="7">
+            android:layout_gravity="start"
+            android:layout_marginStart="2dp"
+            android:text="@{element.name}"
+            android:textSize="12sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/x1y1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/x1y2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/x1y3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/x1y4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/x1y5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/x1y6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/x1y7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/x1y8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/x1y9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/x1y10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/x1y11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/x1y12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/x1y13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/x1y14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/x1y15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/x1y16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/x1y17"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/x1y18"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/x2y1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/x3y1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tool:text="1"
-                android:textSize="20dp" />
-
-
-        </GridLayout>
-
-    </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@{element.symbol}"
+            android:textSize="30sp" />
+    </FrameLayout>
 </layout>

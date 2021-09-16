@@ -1,17 +1,22 @@
 package com.example.peridoictable
 
 import android.view.View
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-
+import com.example.peridoictable.databinding.RowItemElementBinding
 
 
 // val bingind = XMl inhret at
 // view holder kısmına binding root ver.
 
-class PeridoicViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+class PeridoicViewHolder(
+    private val bind: RowItemElementBinding
+) : RecyclerView.ViewHolder(bind.root) {
+
 
     fun bind(model: PeriodTableModel) {
+        bind.element?.name = "sadasdasda"
+        bind.element?.symbol = "sadasdadsa"
+
 
 
 

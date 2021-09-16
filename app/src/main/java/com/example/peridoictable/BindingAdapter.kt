@@ -34,7 +34,7 @@ fun setBackgroundColor(v: FrameLayout, type: Int) {
         )
         ElementGroup.METALLOID.ordinal -> v.setBackgroundColor(
             v.context,
-            android.R.color.background_dark
+            android.R.color.holo_blue_light
         )
         ElementGroup.POST_TRANSITION_METAL.ordinal -> v.setBackgroundColor(
             v.context,

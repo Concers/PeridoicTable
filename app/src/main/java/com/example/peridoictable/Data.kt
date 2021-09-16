@@ -1,6 +1,8 @@
 package com.example.peridoictable
 
 object Data {
+
+    val elementList: ArrayList<PeriodTableModel> = arrayListOf()
     fun getData(): List<PeriodTableModel> {
         val hydrogen = PeriodTableModel(
             name = "Hydrogen",

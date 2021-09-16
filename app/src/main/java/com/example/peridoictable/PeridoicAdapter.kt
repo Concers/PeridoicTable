@@ -3,25 +3,38 @@ package com.example.peridoictable
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.peridoictable.databinding.RowItemElementBinding
 
-class PeridoicAdapter(private val peridoicList: List<PeriodTableModel>) :
-    RecyclerView.Adapter<PeridoicViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PeridoicViewHolder {
-        val inflater = LayoutInflater.from(parent.context)
-        val itemView = inflater.inflate(R.layout.row_item_element, parent, false)
-        return PeridoicViewHolder(itemView)
+class PeridoicAdapter(data: List<PeriodTableModel>) : RecyclerView.Adapter<PeridoicViewHolder>() {
+
+
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int
+    )
+            : PeridoicViewHolder {
+        val itembinding =
+            RowItemElementBinding
+                .inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+
+        return PeridoicViewHolder(itembinding)
+
+
     }
 
     override fun onBindViewHolder(holder: PeridoicViewHolder, position: Int) {
-        val newList = peridoicList[position]
+
+        val newList = Data.getData()[position]
         holder.bind(newList)
     }
 
     override fun getItemCount(): Int {
-        return peridoicList.size
+        return Data.getData().size
     }
-
-
 
 
 }
