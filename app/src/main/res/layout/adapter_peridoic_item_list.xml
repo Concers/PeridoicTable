@@ -1,107 +1,163 @@
-<?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_column="21"
-    android:orientation="horizontal">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools">
 
+    <data>
 
+    </data>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-
-
-        <TextView
-            android:id="@+id/name"
+        <GridLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="40dp"
-            android:padding="20dp">
+            android:layout_centerInParent="true"
+            android:columnCount="18"
+            android:rowCount="7">
 
-        </TextView>
+            <TextView
+                android:id="@+id/x1y1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
 
-        <TextView
-            android:id="@+id/atomic_mass"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="60dp"
-            android:padding="20dp">
+            <TextView
+                android:id="@+id/x1y2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/x1y3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/x1y4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/x1y5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/x1y6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/x1y7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/x1y8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/x1y9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/x1y10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/x1y11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/x1y12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/x1y13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/x1y14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/x1y15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/x1y16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/x1y17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/x1y18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/x2y1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/x3y1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="1"
+                android:textSize="20dp" />
 
 
-        </TextView>
-        <TextView
-            android:id="@+id/id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:padding="20dp">
+        </GridLayout>
 
-        </TextView>
-
-        <TextView
-            android:id="@+id/spectral_img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="60dp"
-            android:padding="20dp">
-
-
-        </TextView>
-
-
-        <TextView
-            android:id="@+id/summary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="60dp"
-            android:padding="20dp">
-
-
-        </TextView>
-
-        <TextView
-            android:id="@+id/symbol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="60dp"
-            android:padding="20dp">
-
-
-        </TextView>
-
-        <TextView
-            android:id="@+id/xpos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="60dp"
-            android:padding="20dp">
-
-
-        </TextView>
-
-        <TextView
-            android:id="@+id/ypos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="60dp"
-            android:padding="20dp">
-
-
-        </TextView>
-
-        <TextView
-            android:id="@+id/electron_configuration_semantic"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="60dp"
-            android:padding="20dp">
-
-
-        </TextView>
-    </androidx.cardview.widget.CardView>
-
-</GridLayout>
+    </RelativeLayout>
+</layout>

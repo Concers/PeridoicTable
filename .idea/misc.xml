@@ -4,8 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Deka Tesis/StudioProjects/PeridoicTable/app/src/main/res/layout/activity_main.xml" value="0.17831813576494426" />
-        <entry key="..\:/Users/Deka Tesis/StudioProjects/PeridoicTable/app/src/main/res/layout/adapter_peridoic_item_list.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Deka Tesis/StudioProjects/PeridoicTable/app/src/main/res/layout/adapter_peridoic_item_list.xml" value="0.5" />
         <entry key="..\:/Users/Deka Tesis/StudioProjects/PeridoicTable/app/src/main/res/layout/gridlayout.xml" value="0.4129763130792997" />
+        <entry key="..\:/Users/Deka Tesis/StudioProjects/PeridoicTable/app/src/main/res/layout/row_item_element.xml" value="0.22870370370370371" />
       </map>
     </option>
   </component>
