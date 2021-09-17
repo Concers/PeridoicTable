@@ -1766,6 +1766,7 @@ object Data {
         elementList.add(bismuth)
         elementList.add(moscovium)
         elementList.add(oxygen)
+        elementList.add(empty)
         elementList.add(sulfur)
         elementList.add(selenium)
         elementList.add(tellurium)
@@ -1774,8 +1775,6 @@ object Data {
         elementList.add(fluorine)
         elementList.add(chlorine)
         elementList.add(bromine)
-        elementList.add(iodine)
-
         elementList.add(helium)
         elementList.add(neon)
         elementList.add(argon)
@@ -1784,7 +1783,8 @@ object Data {
         elementList.add(radon)
         elementList.add(boron)
         elementList.add(oganesson)
-        elementList.add(astatine)
+        elementList.add(iodine)
+
 
         return elementList
     }
