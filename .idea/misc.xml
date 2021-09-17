@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Gece/AndroidStudioProjects/peridoictable/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20666666666666667" />
         <entry key="..\:/Users/Gece/AndroidStudioProjects/peridoictable/app/src/main/res/layout/activity_main.xml" value="0.23020833333333332" />
+        <entry key="..\:/Users/Gece/AndroidStudioProjects/peridoictable/app/src/main/res/layout/adapter_dialog_item.xml" value="0.19375" />
+        <entry key="..\:/Users/Gece/AndroidStudioProjects/peridoictable/app/src/main/res/layout/adapter_item_list.xml" value="0.1322463768115942" />
         <entry key="..\:/Users/Gece/AndroidStudioProjects/peridoictable/app/src/main/res/layout/adapter_peridoic_item_list.xml" value="0.23020833333333332" />
-        <entry key="..\:/Users/Gece/AndroidStudioProjects/peridoictable/app/src/main/res/layout/gridlayout.xml" value="0.1" />
+        <entry key="..\:/Users/Gece/AndroidStudioProjects/peridoictable/app/src/main/res/layout/gridlayout.xml" value="0.12" />
       </map>
     </option>
   </component>

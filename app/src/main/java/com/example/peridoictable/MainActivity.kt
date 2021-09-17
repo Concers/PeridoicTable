@@ -2,39 +2,38 @@ package com.example.peridoictable
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.example.peridoictable.adapter.PeridoicAdapter
+import com.example.peridoictable.databinding.ActivityMainBinding
+import com.example.peridoictable.mockdata.Data
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(
+            this,
+            R.layout.activity_main
+        )
+        val elementAll = Data.getData()
+        val peridoicAdapter = PeridoicAdapter(elementAll)
 
+        binding.recyclerview.layoutManager = GridLayoutManager(
+            this, 9, GridLayoutManager.HORIZONTAL, false
+        )
+        binding.recyclerview.setHasFixedSize(true)
 
-//        val linearLayoutManagerVertical =
-//            LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-//        val linearLayoutManagerHorizontal =
-//            LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        //  val gridLayoutManagerVertical = GridLayoutManager(this, 2)
-
-        //spancount dikey
-
-        val gridLayoutManagerHorizontal =
-            GridLayoutManager(this, 9, GridLayoutManager.HORIZONTAL, false)
-
-
-        //set SpanSizeLookup()
-        //  gridLayoutManagerVertical.spanSizeLookup = MySpanSizeLookup(18, 1, 2)
-//        gridLayoutManagerHorizontal.spanSizeLookup = SpanSizeLookup(3, 4, 2)
-
-
-        val peridoicAdapter = PeridoicAdapter(Data.getData())
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerview)
-        recyclerView.adapter = peridoicAdapter
-        recyclerView.layoutManager = gridLayoutManagerHorizontal
-
+        binding.recyclerview.adapter = peridoicAdapter
 
     }
+
+
 
 
 }

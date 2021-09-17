@@ -8,4 +8,19 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="he_color">#4287f5</color>
+
+
+    <color name="non_metal">#009688</color>
+    <color name="alkali_metal">#B2DF8787</color>
+    <color name="alkalineearth_metal">#DA0606</color>
+    <color name="metaloid">#CDDC39</color>
+    <color name="post_transition_metal">#cccccc</color>
+    <color name="transition_metal">#ffc0bf</color>
+    <color name="metal">#03F407</color>
+    <color name="halogen">#5DA0D3</color>
+    <color name="noble_gas">#1341E6</color>
+    <color name="lanthanide">#5535AE</color>
+    <color name="actinide">#6A4374</color>
+    <color name="none">#212121</color>
+    <color name="unknown">#000000</color>
 </resources>
